@@ -1,3 +1,7 @@
-streamlit
-requests
+fastapi
+uvicorn
+sqlalchemy
+pg8000
 pandas
+requests
+streamlit
