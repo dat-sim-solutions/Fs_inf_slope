@@ -5,7 +5,7 @@ import uuid
 from typing import List
 import os
 
-DATABASE_URI = os.getenv("DATABASE_URL") 
+DATABASE_URI = os.getenv("DATABASE_URI") 
 engine = create_engine(DATABASE_URI, connect_args={"sslmode": "require"})
 app = FastAPI(title="Peru Geotech API")
 
