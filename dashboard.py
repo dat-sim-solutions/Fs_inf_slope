@@ -5,7 +5,8 @@ import pandas as pd
 
 # 1. Configuration & Session Setup
 # REPLACE this with your actual Render API URL after deployment
-API_URL = "https://fs-inf-slope.onrender.com/calculate" 
+API_URL = "https://fs-inf-slope.onrender.com" 
+# API_URL = "https://fs-inf-slope.onrender.com/calculate" 
 
 st.set_page_config(page_title="Peru Slope Safety Pro", layout="wide")
 
