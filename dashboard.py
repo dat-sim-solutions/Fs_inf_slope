@@ -76,7 +76,7 @@ with st.sidebar:
     
     slope_angle = st.slider(t[lang]["slope_label"], 10.0, 45.0, 25.0)
     z_depth = st.number_input(t[lang]["depth_label"], 1.0, 50.0, 5.0)
-    water_ratio = st.slider(t[lang]["water_label"], 0.0, 1.0, 0.2, help="0 = Dry, 1 = Fully Saturated")
+    water_ratio = st.slider(t[lang]["water_label"], 0.0, 1.0, 0.2, help="0 = Dry / Seco; 1 = Fully Saturated / Saturado")
     
     if st.button(t[lang]["calc_btn"], type="primary"):
         payload = {
