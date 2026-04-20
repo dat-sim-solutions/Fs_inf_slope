@@ -125,8 +125,7 @@ with col2:
     st.markdown("- 🟢 **Fs > 1.5**: Permanent \n- 🟡 **1.0 < Fs < 1.5**: Temporary \n- 🔴 **Fs < 1.0**: Failure")
     st.caption(t[lang]["formula"])
     # Add a simple diagram placeholder
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Slope_stability_analysis.png/300px-Slope_stability_analysis.png", 
-             caption="Typical Failure Surface")
+    st.image("infinite_slope_diagram.png", caption="Infinite Slope Model (β & z)")
 
 # --- FOOTER / DEVELOPER INFO ---
 st.sidebar.divider()
