@@ -113,7 +113,7 @@ with col1:
                 st.table(df)
                 
                 latest_fs = history_data[0]['fs']
-                st.metric(label=t[lang]["latest"], value=latest_fs)
+                st.metric(label=t[lang]["latest"], value=latest_fs, delta="SAFE" if latest_fs > 1.5 else "CRITICAL")
             else:
                 st.write(t[lang]["no_data"])
     except:
