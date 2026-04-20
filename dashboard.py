@@ -76,7 +76,7 @@ with st.sidebar:
     
     slope_angle = st.slider(t[lang]["slope_label"], 10.0, 45.0, 25.0)
     z_depth = st.number_input(t[lang]["depth_label"], 1.0, 50.0, 5.0)
-    water_ratio = st.slider(t[lang]["water_label"], 0.0, 1.0, 0.2)
+    water_ratio = st.slider(t[lang]["water_label"], 0.0, 1.0, 0.2, help="0 = Dry, 1 = Fully Saturated")
     
     if st.button(t[lang]["calc_btn"], type="primary"):
         payload = {
@@ -113,7 +113,7 @@ with col1:
                 st.table(df)
                 
                 latest_fs = history_data[0]['fs']
-                st.metric(label=t[lang]["latest"], value=latest_fs, delta="SAFE" if latest_fs > 1.5 else "CRITICAL",
+                st.metric(label=t[lang]["latest"], value=latest_fs, delta="SAFE / SEGURO" if latest_fs > 1.5 else "CRITICAL / CRÍTICO",
                           delta_color="normal" if latest_fs > 1.5 else "inverse")
             else:
                 st.write(t[lang]["no_data"])
