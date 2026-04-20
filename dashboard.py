@@ -122,5 +122,15 @@ with col1:
 with col2:
     st.subheader(t[lang]["guide_title"])
     st.markdown(t[lang]["thresholds"])
-    st.markdown("- 🟢 **Fs > 1.5**\n- 🟡 **1.0 < Fs < 1.5**\n- 🔴 **Fs < 1.0**")
+    st.markdown("- 🟢 **Fs > 1.5**: Permanent \n- 🟡 **1.0 < Fs < 1.5**: Temporary \n- 🔴 **Fs < 1.0**: Failure")
     st.caption(t[lang]["formula"])
+    # Add a simple diagram placeholder
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Slope_stability_analysis.png/300px-Slope_stability_analysis.png", 
+             caption="Typical Failure Surface")
+
+# --- FOOTER / DEVELOPER INFO ---
+st.sidebar.divider()
+st.sidebar.markdown(f"**Developer:** MSc Juan Avalos Carrión")
+st.sidebar.markdown(f"Geophysics + Data Science Specialist")
+st.sidebar.markdown(f"https://www.linkedin.com/in/juan-a-c-01457674/")
+st.sidebar.caption(" 2026 ")
