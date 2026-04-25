@@ -146,6 +146,8 @@ with col2:
     st.markdown("Seismic Condition ($k_h > 0$):")
     st.markdown("- 🟢 **Fs > 1.1**: Stable \n- 🔴 **Fs < 1.1**: Risk")
     st.caption(t[lang]["formula"])
+    # Add a simple diagram placeholder
+    st.image("diagram.png", caption="Infinite Slope Model (β & z)")
 
 # --- FOOTER ---
 st.sidebar.divider()
