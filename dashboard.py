@@ -108,16 +108,7 @@ with st.sidebar:
             st.error("Connection Failed")
 
 # 4. Main Display
-#st.title(t[lang]["title"])
-# Create two columns: one tiny one for the flag, one for the title
-col_flag, col_title = st.columns([1, 15], vertical_alignment="center") 
-
-with col_flag:
-    # Use the local file name you uploaded to GitHub
-    st.image("diagram.png", width=50) 
-with col_title:
-    st.title(t[lang]["title"])
-
+st.title(t[lang]["title"])
 st.markdown(t[lang]["subtitle"])
 
 col1, col2 = st.columns([2, 1])
