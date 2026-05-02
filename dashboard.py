@@ -155,6 +155,4 @@ st.sidebar.markdown(f"**Developer:** MSc Juan Avalos Carrión")
 st.sidebar.caption("Geotechnical Data Science | 2026")
 st.sidebar.markdown(f"https://www.linkedin.com/in/juan-a-c-01457674/")
 
-st.markdown("<br><hr><center><small>CENEPRED es la autoridad oficial en Perú. "
-            "Uso sugerido para pre-dimensionamiento técnico.</small></center>", 
-            unsafe_allow_style=True)
+st.markdown(f"CENEPRED es la autoridad oficial en Perú. Uso sugerido para pre-dimensionamiento técnico.")
